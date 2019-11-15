@@ -5,22 +5,22 @@ body, html {
 }
 
 body {
-    height: 90vh;
     font-size: 16px;
     background-color: #FAFAFA;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
 }
 
 #app-name {
-    margin: 0px 0px 5px;
+    margin: 50px 10px 5px;
+    text-align: center;
 }
 
 #sub {
-    margin:0px 0px 50px;
+    margin:0px 10px 50px;
     font-weight: 300;
 }
 
@@ -36,6 +36,7 @@ body {
     user-select: none;
     width: 256px;
     height: 256px;
+    margin:15px;
     border-radius: 3px;
     background-color: #FCFCFC;
     overflow: hidden;
