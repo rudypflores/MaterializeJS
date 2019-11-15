@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+body, html {
+    margin: 0;
+}
+
+body {
+    height: 90vh;
+    font-size: 16px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#app-name {
+    margin: 0px 0px 5px;
+}
+
+#sub {
+    margin:0px 0px 50px;
+    font-weight: 300;
+}
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    width:80vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square {
+    user-select: none;
+    width: 256px;
+    height: 256px;
+    border-radius: 3px;
+    background-color: #FCFCFC;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+.title {
+    position: absolute;
+    color: #424242;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.inner-square {
+    height: 0%;
+    width: 256px;
+    background-color: #424242;
+    border-radius: 3px;
+}
+
+.overlap {
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes slideIn {
+    from {
+        height: 0%;
+    } 
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        height: 100%;
+    } 
+    to {
+        height: 0%;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        border-radius: 50%;
+        width: 0px;
+        height:0px;
+        opacity: 1;
+    } 
+    50% {
+        border-radius: 50%;
+        width:256px;
+        height:256px;
+        opacity:1;
+    }
+    90% {
+        opacity: .5;
+        height: 256px;
+    }
+    100% {
+        opacity: 0;
+        height:256px;
+    }
+}
