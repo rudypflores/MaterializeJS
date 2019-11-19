@@ -4,9 +4,14 @@ body, html {
     margin: 0;
 }
 
+html {
+    background: linear-gradient(to left, #ece9e6, #ffffff);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
 body {
     font-size: 16px;
-    background-color: #FAFAFA;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -38,7 +43,9 @@ body {
     height: 256px;
     margin:15px;
     border-radius: 3px;
-    background-color: #FCFCFC;
+    background: url('../img/sample-one.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -48,7 +55,7 @@ body {
 
 .title {
     position: absolute;
-    color: #424242;
+    color: #FCFCFC;
     text-align: center;
     margin: 0;
     font-size: 2em;
@@ -60,11 +67,31 @@ body {
     width: 256px;
     background-color: #424242;
     border-radius: 3px;
+    opacity:0.9;
 }
 
 .overlap {
     position: absolute;
     z-index: 1;
+}
+
+a {
+    all:unset;
+}
+
+.btn-section {
+    all:unset;
+    cursor: pointer;
+    margin-top:50px;
+    margin-bottom: 50px;
+    min-width: 64px;
+    height:36px;
+    padding:8px 16px;
+    border: 1px solid #424242;
+    border-radius: 3px;
+    color: #424242;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 @keyframes slideIn {

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+html, body {
+    margin:0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size:16px;
+    font-family: 'Lato', sans-serif;
+    color:#424242;
+    background: linear-gradient(to left, #ece9e6, #ffffff);
+}
+
+#nav {
+    position: fixed;
+    right:0;
+    left:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color:#FAFAFA;
+    background-color:#424242;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+.icon {
+    height:2em;
+    width:auto;
+    cursor: pointer;
+}
+
+#title {
+    font-size:1.7em;
+    user-select: none;
+}
+
+#menu {
+    margin:0px 25px;
+}
+
+#back {
+    cursor: pointer;
+    margin-right:25px;
+    user-select: none;
+}
+
+#search {
+    margin-right: 15px;
+}
+
+#more {
+    margin-right: 15px;
+}
+
+#content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#day {
+    font-size: 1.2em;
+    margin:25px;
+}
+
+/* tab configuration */
+.tab {
+    display: flex;
+    flex-flow:row nowrap;
+}
+
+.portrait {
+    height:3.2em;
+    width:auto;
+    border-radius:50%;
+    margin:25px;
+}
+
+.wrapper-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.subject {
+    margin:0;
+    font-size: 1.3em;
+    user-select: none;
+}
+
+.name {
+    margin:0;
+    font-size: 1em;
+    user-select: none;
+}
+
+a {
+    all:unset;
+}
+
+hr {
+    border: 0.5px solid #c9c9c9;
+    width:90%;
+    margin:3px auto;
+}

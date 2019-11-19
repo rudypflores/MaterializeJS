@@ -16,6 +16,7 @@ const slideOut = 'slideOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards';
 const ripple = 'ripple 1s cubic-bezier(0.23, 1, 0.32, 1) forwards';
 
 const setup = () => {
+    
     const innerSquare1 = createSquare();
     const innerSquare2 = createSquare('flex-end');
     const innerSquare3 = createSquare('flex-start');
@@ -29,33 +30,27 @@ const setup = () => {
     square1.appendChild(innerSquare1);
     square1.addEventListener('mouseenter', () => {
         innerSquare1.style.animation = slideIn;
-        t1.style.color = '#FCFCFC';
     });
     square1.addEventListener('mouseleave', () => {
         innerSquare1.style.animation = slideOut;
-        t1.style.color = '#424242';
     });
 
     //setup for square 2
     square2.appendChild(innerSquare2);
     square2.addEventListener('mouseenter', () => {
         innerSquare2.style.animation = slideIn;
-        t2.style.color = '#FCFCFC';
     });
     square2.addEventListener('mouseleave', () => {
         innerSquare2.style.animation = slideOut;
-        t2.style.color = '#424242';
     });
 
     //setup for square 3
     square3.appendChild(innerSquare3);
     square3.addEventListener('mouseenter', () => {
         innerSquare3.style.animation = slideIn;
-        t3.style.color = '#FCFCFC';
     });
     square3.addEventListener('mouseleave', () => {
         innerSquare3.style.animation = slideOut;
-        t3.style.color = '#424242';
     });
 
     //setup for square 4
@@ -65,13 +60,11 @@ const setup = () => {
         innerSquare4.style.animation = ripple;
         innerSquare42.style.animation = ripple;
         innerSquare42.style.animationDelay = '0.3s';
-        t4.style.color = '#FCFCFC';
     });
     square4.addEventListener('animationend', (event) => {
         if(event.target.classList.value === 'inner-square') {
             innerSquare4.style.animation = 'none';
             innerSquare42.style.animation = 'none';
-            t4.style.color = '#424242';
         }
     });
 
